@@ -1,0 +1,12 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+.idea/
+build/
+.gradle/
+target/
+build.gradle
+gradlew
+gradlew.bat
+serenity.properties
+setting.gradle
