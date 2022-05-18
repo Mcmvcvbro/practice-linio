@@ -11,8 +11,8 @@ Feature: realizar la compra de productos
 
   @scenario2
   Scenario: validar producto seleccionado (carrito)
-    Given el usuario debe estar en la aplicacion https://linio.com.co
-    When el usuario selecciona la opción del carrito
-    And el usuario selecciona el producto agregado "Super Mega Combo Azul Queen 160x190 Resortado Marshall" "3"
-    Then  el usuario elimina los productos ingresados
-    And el usuario deberia ver un mensaje "No hay productos en tu carrito"
+    Given el usuario debe estar en la aplicacion https://www.linio.com.co
+    When el usuario ingresa la categoria y seccion
+    And el usuario selecciona el producto y su cantidad "Super Mega Combo Azul Queen 160x190 Resortado Marshall" "3"
+    Then el usuario da click para ir al carrito y eliminar el producto
+    And  el usuario deberia ver un mensaje "No hay productos en tu carrito"

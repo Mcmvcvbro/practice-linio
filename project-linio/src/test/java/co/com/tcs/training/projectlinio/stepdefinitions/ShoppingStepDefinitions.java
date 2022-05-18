@@ -1,6 +1,8 @@
 package co.com.tcs.training.projectlinio.stepdefinitions;
 
+import co.com.tcs.training.projectlinio.questions.Message;
 import co.com.tcs.training.projectlinio.tasks.AddToCart;
+import co.com.tcs.training.projectlinio.tasks.Cart;
 import co.com.tcs.training.projectlinio.tasks.CategoryAndSection;
 import co.com.tcs.training.projectlinio.tasks.ProductAndQuantity;
 import co.com.tcs.training.projectlinio.userinterfaces.PageLinio;
@@ -11,7 +13,11 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import org.hamcrest.Matchers;
 
+import java.util.regex.Matcher;
+
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.*;
 
 public class ShoppingStepDefinitions {
@@ -19,7 +25,7 @@ public class ShoppingStepDefinitions {
     PageLinio page;
 
     @Before
-    public void setup(){
+    public void setup() {
         setTheStage(new OnlineCast());
         theActorCalled("david");
     }
@@ -51,6 +57,20 @@ public class ShoppingStepDefinitions {
 
     @Then("^el usuario deberia ver el producto la cantidad y su valor$")
     public void elUsuarioDeberiaVerElProductoLaCantidadYSuValor() {
+
+    }
+
+    //second
+    @Then("^el usuario da click para ir al carrito y eliminar el producto$")
+    public void elUsuarioDaClickParaIrAlCarritoYEliminarElProducto() {
+        OnStage.theActorInTheSpotlight().attemptsTo(Cart.clickAndDelete());
+
+    }
+
+
+    @Then("^el usuario deberia ver un mensaje (.*)$")
+    public void elUsuarioDeberiaVerUnMensaje(String message) {
+        OnStage.theActorInTheSpotlight().should(seeThat(Message.isVisible(), Matchers.equalTo(message)));
 
     }
 }

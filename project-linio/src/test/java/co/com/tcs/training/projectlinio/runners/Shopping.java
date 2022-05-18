@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src\\test\\resources\\features\\shopping.feature",
         glue = "co.com.tcs.training.projectlinio.stepdefinitions",
         snippets = SnippetType.CAMELCASE,
-        tags = "@scenario1"
+        tags = "@scenario2"
 
 )
 

@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="realizar la compra de productos" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-17T20:47:05" hostname="LAPTOP-BTRA6MTS" time="30.422">
+<testsuite name="realizar la compra de productos" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-05-18T17:00:18" hostname="LAPTOP-BTRA6MTS" time="40.686">
   <properties/>
-  <testcase name="realizar la seleccion de productos" classname="realizar la compra de productos" time="30.422"/>
+  <testcase name="validar producto seleccionado (carrito)" classname="realizar la compra de productos" time="40.686">
+    <failure message="java.lang.AssertionError: &#10;Expected: &quot;\&quot;No hay productos en tu carrito\&quot;&quot;&#10;     but: was &quot;NO TIENES PRODUCTOS EN TU CARRITO&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &quot;\&quot;No hay productos en tu carrito\&quot;&quot;
+     but: was &quot;NO TIENES PRODUCTOS EN TU CARRITO&quot;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:300)
+	at co.com.tcs.training.projectlinio.stepdefinitions.ShoppingStepDefinitions.elUsuarioDeberiaVerUnMensaje(ShoppingStepDefinitions.java:73)
+	at ✽.el usuario deberia ver un mensaje &quot;No hay productos en tu carrito&quot;(src/test/resources/features/shopping.feature:18)
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[may 17, 2022 3:47:05 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[may 18, 2022 12:00:19 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 14401
+Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 20982
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may 17, 2022 3:47:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+may 18, 2022 12:00:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

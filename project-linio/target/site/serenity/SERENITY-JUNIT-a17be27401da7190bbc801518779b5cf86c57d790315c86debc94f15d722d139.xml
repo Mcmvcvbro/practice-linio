@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="realizar la compra de productos" skipped="0" tests="1" time="39.44" timestamp="2022-05-18 12:00:18"><testcase name="validar producto seleccionado (carrito)"><failure message="&#10;Expected: &quot;\&quot;No hay productos en tu carrito\&quot;&quot;&#10;     but: was &quot;NO TIENES PRODUCTOS EN TU CARRITO&quot;" type="java.lang.AssertionError">
+Expected: "\"No hay productos en tu carrito\""
+     but: was "NO TIENES PRODUCTOS EN TU CARRITO"</failure><system-err>
+Expected: "\"No hay productos en tu carrito\""
+     but: was "NO TIENES PRODUCTOS EN TU CARRITO"&#13;
+co.com.tcs.training.projectlinio.stepdefinitions.ShoppingStepDefinitions.elUsuarioDeberiaVerUnMensaje(ShoppingStepDefinitions.java:73)&#13;
+✽.el usuario deberia ver un mensaje "No hay productos en tu carrito"(src/test/resources/features/shopping.feature:18)&#13;
+</system-err></testcase></testsuite>

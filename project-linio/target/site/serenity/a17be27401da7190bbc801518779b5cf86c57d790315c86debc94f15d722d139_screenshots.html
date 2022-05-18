@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="99f8f44c9a1eec6549352b0826abd75b504a80520be52fc12768635c81da9692.html">Realizar La Compra De Productos</a></span>
+                > <span class="truncate-60"><a
+                    href="a17be27401da7190bbc801518779b5cf86c57d790315c86debc94f15d722d139.html">validar producto seleccionado (carrito) </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-05-2022 12:00</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Realizar La Compra De Productos </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como usuario requiero realizar la compra de varios productos
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="0218fdbc5052f69d3f1f3166bb7e2fb1aaba25c78a7c7745c14ed1ccd35fa8dc.html">Scenario2
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">validar producto seleccionado (carrito)
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: Expected: '\'No hay productos en tu carrito\'' but: was 'NO TIENES PRODUCTOS EN TU CARRITO'</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.tcs.training.projectlinio.stepdefinitions.ShoppingStepDefinitions.elUsuarioDeberiaVerUnMensaje(ShoppingStepDefinitions.java:73)<br />✽.el usuario deberia ver un mensaje "No hay productos en tu carrito"(src/test/resources/features/shopping.feature:18)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource1506174326322624989.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="15d77a09e92b2ba7c76c8155b1acc71d069a52c66b83a3f8b62946eb1c11a07f.png" title=" Given el usuario debe estar en la aplicacion https://www.linio.com.co" width="1360"/>
+                <img src="15d77a09e92b2ba7c76c8155b1acc71d069a52c66b83a3f8b62946eb1c11a07f.png" title=" david opens the Page linio" width="1360"/>
+                <img src="15d77a09e92b2ba7c76c8155b1acc71d069a52c66b83a3f8b62946eb1c11a07f.png" title=" Given el usuario debe estar en la aplicacion https://www.linio.com.co (completed)" width="1360"/>
+                <img src="1da91e4e7b794315553ff6f8b2056af73cbb6aff03e49a2c9471c976697081c3.png" title=" When el usuario ingresa la categoria y seccion" width="1360"/>
+                <img src="1da91e4e7b794315553ff6f8b2056af73cbb6aff03e49a2c9471c976697081c3.png" title=" David category and section" width="1360"/>
+                <img src="1da91e4e7b794315553ff6f8b2056af73cbb6aff03e49a2c9471c976697081c3.png" title=" david clicks on left_menu" width="1360"/>
+                <img src="58ffb330e32d9f19dcf54602537eb4fba3c0b8d930e3f0f1ad00b49c65b44666.png" title=" david clicks on left_menu (completed)" width="1360"/>
+                <img src="f5f21c3c71f3baf4b4ccb5074791ffaae056db431dbd195146c36c1a045097e5.png" title=" David category and section (completed)" width="1360"/>
+                <img src="f5f21c3c71f3baf4b4ccb5074791ffaae056db431dbd195146c36c1a045097e5.png" title=" When el usuario ingresa la categoria y seccion (completed)" width="1360"/>
+                <img src="9679aa2395962a8ff54574fa7b61ee0fd22fcb0d12995d342848477d6b69d356.png" title=" And el usuario selecciona el producto y su cantidad &quot;Super Mega Combo Azul Queen 160x190 Resortado Marshall&quot; &quot;3&quot;" width="1360"/>
+                <img src="9679aa2395962a8ff54574fa7b61ee0fd22fcb0d12995d342848477d6b69d356.png" title=" David product and quantity" width="1360"/>
+                <img src="9679aa2395962a8ff54574fa7b61ee0fd22fcb0d12995d342848477d6b69d356.png" title=" david clicks on name" width="1360"/>
+                <img src="1e99351e22131104efea3ce2109fa48761924fa9bf949e2b861a6d83708718ad.png" title=" david clicks on name (completed)" width="1360"/>
+                <img src="1e99351e22131104efea3ce2109fa48761924fa9bf949e2b861a6d83708718ad.png" title=" david clicks on dropDown" width="1360"/>
+                <img src="c43e328dc9cbc903cfc7d5d5d03a191f038fae3439246822f24306932a8d03ab.png" title=" david clicks on dropDown (completed)" width="1360"/>
+                <img src="c43e328dc9cbc903cfc7d5d5d03a191f038fae3439246822f24306932a8d03ab.png" title=" david clicks on quantity" width="1360"/>
+                <img src="bf6c24a5943f8382ac4d2d5275eb2c3562177bd358499fc11fbac1c70f4472fa.png" title=" david clicks on quantity (completed)" width="1360"/>
+                <img src="5d72e712335c4a51b64a86513897271e16cf1f11c201c34cf6d1113e66099454.png" title=" David product and quantity (completed)" width="1360"/>
+                <img src="5d72e712335c4a51b64a86513897271e16cf1f11c201c34cf6d1113e66099454.png" title=" And el usuario selecciona el producto y su cantidad &quot;Super Mega Combo Azul Queen 160x190 Resortado Marshall&quot; &quot;3&quot; (completed)" width="1360"/>
+                <img src="4a58e08965e070e1d8480d59b9bce58f61c41cc5b0e0b636ce8e072aae4a3792.png" title=" Then el usuario da click para ir al carrito y eliminar el producto" width="1360"/>
+                <img src="4a58e08965e070e1d8480d59b9bce58f61c41cc5b0e0b636ce8e072aae4a3792.png" title=" David cart" width="1360"/>
+                <img src="4a58e08965e070e1d8480d59b9bce58f61c41cc5b0e0b636ce8e072aae4a3792.png" title=" david clicks on buy" width="1360"/>
+                <img src="4a58e08965e070e1d8480d59b9bce58f61c41cc5b0e0b636ce8e072aae4a3792.png" title=" david clicks on go cart" width="1360"/>
+                <img src="2451d9313f24237e3e85f5dd41373b7f639472e014e8b8fc313ac573731cf06f.png" title=" david clicks on go cart (completed)" width="1360"/>
+                <img src="2451d9313f24237e3e85f5dd41373b7f639472e014e8b8fc313ac573731cf06f.png" title=" david clicks on eliminar" width="1360"/>
+                <img src="c1df578fa878202f6615b945f18ddff2691f936ff76ffe64ec9aa2757c98276d.png" title=" david clicks on eliminar (completed)" width="1360"/>
+                <img src="c1df578fa878202f6615b945f18ddff2691f936ff76ffe64ec9aa2757c98276d.png" title=" David cart (completed)" width="1360"/>
+                <img src="c1df578fa878202f6615b945f18ddff2691f936ff76ffe64ec9aa2757c98276d.png" title=" Then el usuario da click para ir al carrito y eliminar el producto (completed)" width="1360"/>
+                <img src="c1df578fa878202f6615b945f18ddff2691f936ff76ffe64ec9aa2757c98276d.png" title=" And el usuario deberia ver un mensaje &quot;No hay productos en tu carrito&quot;" width="1360"/>
+                <img src="bdf7ab3a9ca0444a893019873f2fe282029aa1cc9d8ba2ed8c0f68bc684c0cc5.png" title=" Then message should be '\'No hay productos en tu carrito\''" width="1360"/>
+                <img src="b2f2743e12595742478426876efcba52f3bfed21f4aeff7c31819321f67540fc.png" title=" Then message should be '\'No hay productos en tu carrito\'' (completed): <span class='failing-color'>FAILURE</span>" width="1360"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.52</span>
+</div>
+</body>
+</html>

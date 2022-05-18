@@ -10,4 +10,6 @@ public class PageIndex {
 
     public static final Target SELECT_MATTRESSES = Target.the("colchones").locatedBy("//a[text()='Colchones, Base Camas y Almohadas']");
 
+
+
 }

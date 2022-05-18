@@ -2,9 +2,21 @@
 <testsuite name="co.com.tcs.training.projectlinio.runners.Shopping" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LAPTOP-BTRA6MTS" time="0.0">
   <properties/>
   <system-out><![CDATA[
-1 Scenarios (?[32m1 passed?[0m)
-5 Steps (?[32m5 passed?[0m)
-0m30,772s
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/shopping.feature:13 ?[0m# validar producto seleccionado (carrito)
+
+1 Scenarios (?[31m1 failed?[0m)
+5 Steps (?[31m1 failed?[0m, ?[32m4 passed?[0m)
+0m40,986s
+
+java.lang.AssertionError: 
+Expected: "\"No hay productos en tu carrito\""
+     but: was "NO TIENES PRODUCTOS EN TU CARRITO"
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:300)
+	at co.com.tcs.training.projectlinio.stepdefinitions.ShoppingStepDefinitions.elUsuarioDeberiaVerUnMensaje(ShoppingStepDefinitions.java:73)
+	at ?.el usuario deberia ver un mensaje "No hay productos en tu carrito"(src/test/resources/features/shopping.feature:18)
 
 ]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
