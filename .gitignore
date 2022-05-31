@@ -1,0 +1,11 @@
+.idea/
+build/
+gradle/
+.gradle/
+target/
+build.gradle
+gradlew
+gradlew.bat
+serenity.properties
+settings.gradle
+chromedriver.exe
